@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup, Comment
 
 #FINANCIAL MARKETS
-st.subheader("Financial Markets")
+st.subheader("Financial")
 tickers = ["TSLA","BTC-USD","VTI","ETH-USD","NFLX", "FB","METV","ESPO"]
 pull = yf.download("TSLA VTI BTC-USD ETH-USD NFLX FB METV ESPO", start = "2021-05-01", end = "2080-1-1",interval = "1d", group_by = 'tickers').fillna(method="ffill")
 sheet = []
