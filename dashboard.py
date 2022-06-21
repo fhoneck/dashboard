@@ -66,7 +66,7 @@ st.write(r)
 
 
 #POLITICS
-markets = [7456,7053,7057,6867,7760,7162,7204,7085]
+markets = [7456,7053,7057,6867,7760,7162,7204,7085,7107]
 for i in markets:
     try:
         r = requests.get("https://www.predictit.org/api/marketdata/markets/" + str(i)).json()
