@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st 
+import numpy as np
 
 sheet = pd.read_html("https://www.cbssports.com/olympics/news/2024-paris-olympics-medal-count-tracker-for-how-many-gold-silver-bronze-medals-usa-each-country-has-won/")
 sheet = sheet[0]
